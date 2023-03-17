@@ -12,6 +12,6 @@ output.n.df <- predict4landsat_func(dat = input.df,predictN = T)
 output.d15n.df <- predict4landsat_func(dat = input.df,predictN = F)
 
 # example prediction #####
-example.df <- readRDS('cache/groundDN15.rds')
+example.df <- read.csv('cache/groundDN15.csv')
 # predict d15N
 output.d15n.df <- predict4landsat_func(dat = example.df,predictN = F)
